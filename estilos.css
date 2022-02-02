@@ -7,7 +7,7 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: hsl(240, 73%, 65%);
+    background-color: hsl(273, 75%, 66%);
     font-family: 'Kumbh Sans', sans-serif;
 }
 .container{
@@ -37,6 +37,16 @@ body{
     width: 400px;
     position: relative;
     right: 4em;
+}
+.shadow-images{
+    width: 0;
+    height: 0;
+    position: relative;
+    right: 49.5em;
+    top: -23em;
+}
+.shadow-images img{
+    width: 700px;
 }
 .questions h1{
     font-size: 27px;
@@ -107,6 +117,14 @@ hr{
         width: 220px;
         right: 0em;
         bottom: 6.4em;
+    }
+    .shadow-images{
+        position: relative;
+        right: 7em;
+        top: -16em;
+    }
+    .shadow-images img{
+        width: 220px;
     }
     .questions ul:nth-child(3n+1) li{
         font-size: 10px;
