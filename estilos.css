@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2? family= Kumbh+Sans:wght@600 & display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(240, 73%, 65%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body>img{
+    width: 180px;
+    position: fixed;
+    margin-top: -25px;
+    margin-left: 130px;
+    z-index: 1;
+}
+.container{
+    width: 50em;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 2.5em 0em;
+    border-radius: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-right: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.images img:first-child{
+    width: 400px;
+    position: relative;
+    right: 4.5em;
+}
+.images img:nth-child(2){
+    position: fixed;
+    width: 700px;
+    right: 43.25em;
+    bottom: 2em;
+}
+.questions h1{
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+.questions ul{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    list-style: none;
+    padding: 0;
+}
+.questions ul:nth-child(3n+1) li{
+    font-size: 12px;
+    font-weight: 600;
+    color: hsla(237, 12%, 33%,0.7);
+}
+.questions ul:nth-child(3n+1) li:hover{
+    cursor: pointer;
+    color: rgb(228, 161, 36);
+}
+.questions ul:nth-child(3n+1) li:nth-child(2){
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+.questions ul:nth-child(3n) li{
+    color: hsla(240, 6%, 50%,0.7);
+    font-size: 10px;
+}
+hr{
+    border-color: hsla(240, 5%,100%,0.4);
+}
+.response{
+    display: none;
+}
+.arrow_inverse{
+    transform: rotate(180deg);
+}
+@media screen and (max-width:900px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 20em;
+        overflow: visible;
+        padding: 0;
+    }
+    .container h1{
+        text-align: center;
+        margin-top: 0;
+    }
+    .questions{
+        padding: 0 30px;
+    }
+    .images{
+        height: 140px;
+    }
+    .images img:first-child{
+        width: 220px;
+        right: 0em;
+        bottom: 6.4em;
+    }
+    .images img:nth-child(2){
+        width: 220px;
+        position: fixed;
+        right: 11em;
+        bottom: 34em;
+        z-index: 1;
+    }
+    .questions ul:nth-child(3n+1) li{
+        font-size: 10px;
+    }
+    .questions ul:nth-child(3n) li{
+        font-size: 9px;
+    }
+    body>img{
+        width: 80px;
+        position: fixed;
+        top: 7.5em;
+        left: 2.5em;
+        z-index: 1;
+    }
+}
