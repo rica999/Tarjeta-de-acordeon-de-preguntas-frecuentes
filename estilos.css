@@ -10,36 +10,33 @@ body{
     background-color: hsl(240, 73%, 65%);
     font-family: 'Kumbh Sans', sans-serif;
 }
-body>img{
-    width: 180px;
-    position: fixed;
-    margin-top: -25px;
-    margin-left: 130px;
-    z-index: 1;
-}
 .container{
     width: 50em;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: white;
-    padding: 2.5em 0em;
+    padding: 2.5em 60px 2.5em 0;
     border-radius: 30px;
     overflow: hidden;
     box-sizing: border-box;
-    padding-right: 60px;
-    justify-content: center;
     align-items: center;
 }
-.images img:first-child{
+.image-box{
+    width: 0;
+    height: 0;
+    position: relative;
+    right: 4em;
+    top: 13em;
+    z-index: 1;
+}
+.image-box img{
+    width: 8em;
+}
+.images img{
     width: 400px;
     position: relative;
-    right: 4.5em;
-}
-.images img:nth-child(2){
-    position: fixed;
-    width: 700px;
-    right: 43.25em;
-    bottom: 2em;
+    right: 4em;
 }
 .questions h1{
     font-size: 27px;
@@ -92,32 +89,29 @@ hr{
     .questions{
         padding: 0 30px;
     }
+    .image-box{
+        width: 0;
+        height: 0;
+        position: relative;
+        right: -2.5em;
+        top: -2.5em;
+        z-index: 1;
+    }
+    .image-box img{
+        width: 6em;
+    }
     .images{
         height: 140px;
     }
-    .images img:first-child{
+    .images img{
         width: 220px;
         right: 0em;
         bottom: 6.4em;
-    }
-    .images img:nth-child(2){
-        width: 220px;
-        position: fixed;
-        right: 11em;
-        bottom: 34em;
-        z-index: 1;
     }
     .questions ul:nth-child(3n+1) li{
         font-size: 10px;
     }
     .questions ul:nth-child(3n) li{
         font-size: 9px;
-    }
-    body>img{
-        width: 80px;
-        position: fixed;
-        top: 7.5em;
-        left: 2.5em;
-        z-index: 1;
     }
 }
